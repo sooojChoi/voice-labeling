@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/default_title">
+
+        <ListPreference
+            app:defaultValue="button"
+            app:entries="@array/how_to_record_entries"
+            app:entryValues="@array/how_to_record_values"
+            app:key="howToRecord"
+            app:title="@string/record_title"
+            app:useSimpleSummaryProvider="true" />
+
+
+
+    </PreferenceCategory>
+    
+</PreferenceScreen>

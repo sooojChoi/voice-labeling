@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Voice Labeling</string>
+    <string name="btn_picture">picture</string>
+    <string name="btn_gallery">GALLERY</string>
+    <string name="req_permission_reason">Permissions must be allowed. Please accept the permission request.</string>
+    <string name="no_permission">Permission is denied.</string>
+    <string name="show_file_name">File name</string>
+    <string name="btn_video">video</string>
+    <string name="need_permission">Access is not possible because permission was denied.</string>
+    <string name="file_naming">text</string>
+    <string name="btn_record_filename">Voice Filename</string>
+    <string name="btn_record">Voice Recording</string>
+    <string name="snackbar_complete_naming">" The file has been saved successfully. Press back button to return to the main screen."</string>
+
+    <!-- Preference Titles -->
+    <string name="default_title">Basic setting</string>
+
+    <!-- Messages Preferences -->
+    <string name="record_title">How to record</string>
+
+    <!-- Sync Preferences -->
+    <string name="sound_notification">When the notification sounds after 3 seconds, start recording the voice (for 5 seconds).</string>
+    <string name="say_filename">say filename!</string>
+    <string name="snackbar_complete_meta">The text is saved as meta data. Press back button to return to the main screen.</string>
+    <string name="btn_img_play">image play</string>
+    <string name="btn_vdo_play">video play</string>
+    <string name="btn_startAudio">start</string>
+    <string name="btn_pauseAudio">pause</string>
+    <string name="btn_stopAudio">stop</string>
+    <string name="press_the_button">Speak while pressing a button</string>
+    <string name="automatic_sound_notification">Speak when a notification sounds automatically</string>
+    <string name="how_to_use_text">How to use text</string>
+    <string name="how_to_use_record">How to use your voice</string>
+    <string name="change_filename">Change file name</string>
+    <string name="save_as_meta_data">Save as meta data</string>
+    <string name="input_metadata">input metadata in English</string>
+    <string name="saved">Saved successfully.</string>
+    <string name="str_start">Start</string>
+    <string name="str_stop">Stop</string>
+    <string name="connectingText">Connecting ...</string>
+    <string name="connectedText">Connected. Say Filename!</string>
+    <string name="not_saved">Filename is not changed.</string>
+    <string name="retry_record">Please Retry Record.</string>
+    <string name="recording_state">Recording is in progress.</string>
+    <string name="record_start_btn">Voice Recording</string>
+    <string name="save_file">save</string>
+    <string name="text_limit">You can enter up to 50 characters.</string>
+    <string name="complete_recording">Recording is complete.</string>
+    <string name="is_address">no address</string>
+    <string name="delete_file_question">Are you sure you want to delete the file?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="delete_file_now">Please grant the request to delete the file.</string>
+    <string name="delete_image_successfully">has been deleted.</string>
+    <string name="delete_file_canceled">Deletion canceled.</string>
+    <string name="cameraBtn">PICTURE</string>
+    <string name="videoBtn">VIDEO</string>
+    <string name="service_end">This app was released for testing to get feedback. Therefore, you will not be able to use the app services after August 31, 2022. Thank you for using it so far.</string>
+    <string name="service_end_title">The service has been terminated.</string>
+</resources>

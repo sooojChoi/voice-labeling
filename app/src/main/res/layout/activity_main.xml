@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/pictureBtn"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camera_button" />
+
+    <ImageView
+        android:id="@+id/videoBtn"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pictureBtnText"
+        app:srcCompat="@drawable/video_button" />
+
+    <ImageView
+        android:id="@+id/galleryBtn"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoBtnText"
+        app:srcCompat="@drawable/gallery_button" />
+
+    <TextView
+        android:id="@+id/pictureBtnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="@string/cameraBtn"
+        app:layout_constraintEnd_toEndOf="@+id/pictureBtn"
+        app:layout_constraintStart_toStartOf="@+id/pictureBtn"
+        app:layout_constraintTop_toBottomOf="@+id/pictureBtn" />
+
+    <TextView
+        android:id="@+id/videoBtnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="@string/videoBtn"
+        app:layout_constraintEnd_toEndOf="@+id/videoBtn"
+        app:layout_constraintStart_toStartOf="@+id/videoBtn"
+        app:layout_constraintTop_toBottomOf="@+id/videoBtn" />
+
+    <TextView
+        android:id="@+id/galleryBtnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="@string/btn_gallery"
+        app:layout_constraintEnd_toEndOf="@+id/galleryBtn"
+        app:layout_constraintStart_toStartOf="@+id/galleryBtn"
+        app:layout_constraintTop_toBottomOf="@+id/galleryBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

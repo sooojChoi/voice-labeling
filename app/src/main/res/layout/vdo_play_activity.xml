@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/mainVideoView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fnameText" />
+
+    <EditText
+        android:id="@+id/fnameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ems="12"
+        android:padding="10dp"
+        android:text="text"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:textColor="#3d3d3d"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/moreViewBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/moreViewBtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fnameText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/down_arrow" />
+
+
+    <ImageButton
+        android:id="@+id/recordFilenameBtn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/recognition_btn_states"
+        app:layout_constraintEnd_toStartOf="@+id/recordBtn"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fnameText"
+        app:srcCompat="@drawable/before_record_btn_not_clicked" />
+
+    <TextView
+        android:id="@+id/filenameBtnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#3d3d3d"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/recordFilenameBtn"
+        app:layout_constraintStart_toStartOf="@+id/recordFilenameBtn"
+        app:layout_constraintTop_toBottomOf="@+id/recordFilenameBtn" />
+
+    <ImageButton
+        android:id="@+id/recordBtn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/fnameText"
+        app:srcCompat="@drawable/before_record_btn_not_clicked" />
+
+    <TextView
+        android:id="@+id/recordBtnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#3d3d3d"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/recordBtn"
+        app:layout_constraintStart_toStartOf="@+id/recordBtn"
+        app:layout_constraintTop_toBottomOf="@+id/recordBtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_border"
+        android:text="@string/save_file"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fnameText" />
+
+    <VideoView
+        android:id="@+id/settingVideoView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recordBtnText" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/btnSave"
+        app:layout_constraintStart_toStartOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave"
+        app:srcCompat="@drawable/play_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

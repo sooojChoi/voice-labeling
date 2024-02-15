@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:textSize="17sp"
+        android:background="@color/white"
+        android:textColor="#505050"
+        android:text="@string/delete_file_question"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/yesBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/less_light_green"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:text="@string/yes" />
+
+        <Button
+            android:id="@+id/noBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/less_light_green"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:text="@string/no" />
+    </LinearLayout>
+
+</LinearLayout>
